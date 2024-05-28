@@ -1,5 +1,11 @@
-hello i am devil.
-i am from odisha.
-now t hydrabad
-hello rashmi
-i know you are gong good 
+  agent {
+    docker { image 'node:16-alpine' }
+  }
+  stages {
+    stage('Test') {
+      steps {
+        sh 'node --version'
+      }
+    }
+  }
+} 
